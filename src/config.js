@@ -1,6 +1,7 @@
 // src/config.js
 // All customer-facing text, contact info, and brand colors live here.
 // Edit this file to update copy, contacts, or colors. Never put these values in components.
+import heroImg from './assets/hero.png'
 
 export const agendaTitle = "Claro @ Salesforce Connections 2026";
 export const clientName = "Claro";
@@ -22,10 +23,8 @@ export const teamContacts = [
 ];
 
 // Hero image displayed in the header between the contact row and the event list.
-// Import the asset and assign here once dropped into src/assets/, e.g.:
-//   import heroImg from './assets/hero.png'
-//   export const heroImage = heroImg
-export const heroImage = null;
+// Vite import ensures the asset is bundled and precached by the service worker.
+export const heroImage = heroImg;
 
 // Brand color tokens. Also mirrored as CSS custom properties in index.css.
 export const colors = {
