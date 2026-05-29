@@ -26,12 +26,10 @@ export default function EventDetail({ event, isFavorited, onToggleFavorite, onCl
   const hasLocation = locationParts.length > 0
   const location = locationParts.join(', ')
 
-  // Event times in events.js are America/Chicago wall-clock (CDT, UTC-5) for June 2-4 2026.
-  // We convert to UTC by adding 5h and emit with a 'Z' suffix so calendar apps pin the
-  // correct absolute time regardless of the user's device timezone (many attendees' phones
-  // are on Brasília time, UTC-3). Offset is hardcoded: no DST transition occurs in this window.
-  // Do NOT use runtime-timezone-dependent conversion (e.g. Date.toISOString on a local-parsed
-  // date) — that would apply the host/device offset and break this.
+  // ⚠ UPDATE for each engagement: hard-code the venue's UTC offset in hours.
+  // Chicago CDT (Jun 2026) = UTC-5 → +5. São Paulo BRT = UTC-3 → +3.
+  // Do NOT use Date.toISOString on a locally-parsed date — that applies the host
+  // device offset and produces wrong times for attendees in other timezones.
   function toUtcComponents(date, time) {
     const [y, mo, d]  = date.split('-').map(Number)
     const [h, mi]     = time.split(':').map(Number)
