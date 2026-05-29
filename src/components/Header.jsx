@@ -1,7 +1,7 @@
 import { agendaTitle, instructions, teamContacts, heroImage } from '../config.js'
 import { useOnlineStatus } from '../hooks/useOnlineStatus.js'
 import salesforceLogo from '../assets/salesforce-logo.svg'
-import clientLogo from '../assets/client-logo.svg'
+import claroLogo from '../assets/claro-logo.svg'
 
 export default function Header({ onOfflineTap }) {
   const isOnline = useOnlineStatus()
@@ -12,7 +12,7 @@ export default function Header({ onOfflineTap }) {
         {/* Row 1 — Logos */}
         <div className="flex items-center justify-between">
           <img src={salesforceLogo} alt="Salesforce" className="h-7 w-auto" />
-          <img src={clientLogo} alt="Client" className="h-6 w-auto" />
+          <img src={claroLogo} alt="Claro" className="h-8 w-auto" />
         </div>
 
         {/* Row 2 — Agenda title */}
