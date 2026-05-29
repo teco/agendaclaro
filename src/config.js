@@ -2,8 +2,8 @@
 // All customer-facing text, contact info, and brand colors live here.
 // Edit this file to update copy, contacts, or colors. Never put these values in components.
 
-export const agendaTitle = "Client @ Event Name Year";
-export const clientName = "Client";
+export const agendaTitle = "Claro @ Salesforce Connections 2026";
+export const clientName = "Claro";
 
 // Paragraph displayed in the app header. Rendered verbatim — no HTML.
 export const instructions =
@@ -11,14 +11,14 @@ export const instructions =
 
 // Persistent floating WhatsApp button — generic team inbox.
 // Phone in international format, no spaces, no symbols, no leading +.
-export const whatsappNumber = "TEAM_WHATSAPP_NUMBER";
+export const whatsappNumber = "5511934079641";
 
 // Header contact row — three named team members, each opens a personalized wa.me link.
 // Phone in international format, no spaces, no symbols, no leading +.
 export const teamContacts = [
-  { name: "Account Team Member 1", phone: "PHONE_NUMBER" },
-  { name: "Account Team Member 2", phone: "PHONE_NUMBER" },
-  { name: "Account Team Member 3", phone: "PHONE_NUMBER" },
+  { name: "Terence Reis",     phone: "5511934079641" },
+  { name: "Andreia Ribeiro",  phone: "5511994408866" },
+  { name: "Danilo Menezes",   phone: "5521990389111" },
 ];
 
 // Hero image displayed in the header between the contact row and the event list.
