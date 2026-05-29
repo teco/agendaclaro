@@ -10,9 +10,9 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['icons/icon-192.png', 'icons/icon-512.png'],
       manifest: {
-        name: 'Inter @ Salesforce Connections 2026',
-        short_name: 'CNX Agenda',
-        description: 'Inter event agenda for Salesforce Connections 2026',
+        name: 'Claro @ Salesforce Connections 2026',
+        short_name: 'Claro CNX',
+        description: 'Claro event agenda for Salesforce Connections 2026',
         theme_color: '#00A1E0',
         background_color: '#ffffff',
         display: 'standalone',
